@@ -85,7 +85,6 @@ font-family:'Great Vibes', cursive;
 font-size:55px;
 text-align:justify;
 color:rgb(110, 96, 82);
-margin-bottom:20px;    
 
 
 }
@@ -135,6 +134,7 @@ cursor:pointer;
 }
 
 .foto{
+    position:absolute;
     overflow:hidden;
     border-radius:20px;
     box-shadow:0 10px 20px rgba(0,0,0,0.25);
@@ -149,48 +149,6 @@ cursor:pointer;
     width:100%;
     height:100%;
     object-fit:cover;
-}
-/* ===== CELULAR ===== */
-
-@media(max-width:430px){
-
-  .pagina.vertical{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:12px;
-
-    width:95%;
-
-    margin:auto;
-
-    align-content:center;
-
-    justify-content:center;
-
-    min-height:60vh;
-
-}
-
-    .foto{
-
-        position:relative !important;
-
-        top:auto !important;
-        left:auto !important;
-        right:auto !important;
-
-        width:100% !important;
-
-        height:220px !important;
-        object-fit:cover;
-
-        transform:none !important;
-
-    }
-
 }
 
 /* ===== TEXTO OPCIONAL ===== */
@@ -248,8 +206,8 @@ cursor:pointer;
     max-width:80%;
     max-height:85vh;
 
-    width:80%;
-    height:85vh;
+    width:auto;
+    height:auto;
 
     border-radius:20px;
 
@@ -259,65 +217,7 @@ cursor:pointer;
 
     object-fit:contain;
 }
-    .vertical{
-
-    display:flex !important;
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-    /* ===== 2 FOTOS AL LADO ===== */
-
-.horizontal{
-    display:flex;
-    gap:60px; /* espacio entre fotos */
-    
-    justify-content:center;
-    align-items:center;
-
-    flex-wrap:wrap;
-
-    padding-top:40px;
-    padding-bottom:40px;
-}
-
-/* ===== FOTOS UNA DEBAJO DE OTRA ===== */
-
-.columna{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-    justify-content:center;
-    align-items:center;
-}
-
-/* ===== CUADRICULA 2x2 ===== */
-
-.cuadricula{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
-    justify-content:center;
-    align-items:center;
-}
-    /* ===== DOS FOTOS VERTICALES AL LADO ===== */
-
-.horizontal-vertical{
-    display:flex;
-
-    justify-content:center;
-    align-items:center;
-
-    gap:30px;
-
-    width:100%;
-
-    flex-wrap:nowrap;
-}
 @keyframes zoom{
-    
     from{
         transform:scale(0.7);
         opacity:0;
@@ -328,7 +228,6 @@ cursor:pointer;
         opacity:1;
     }
 }
-    
 
 .cerrar-modal{
     position:absolute;
@@ -349,49 +248,6 @@ cursor:pointer;
         transform:translateY(0);
     }
 }
-    /* ===== CELULAR ===== */
-
-@media(max-width:430px){
-
-    .pagina vertical{
-
-        display:grid;
-
-        grid-template-columns:1fr 1fr;
-
-        gap:12px;
-
-        width:95%;
-
-        margin:auto;
-
-        align-items:start;
-
-    }
-
-    .foto{
-
-        position:relative !important;
-
-        top:auto !important;
-        left:auto !important;
-        right:auto !important;
-
-        width:100% !important;
-
-        height:220px !important;
-
-        transform:none !important;
-
-    }
-
-    .sola{
-        grid-column:span 2;
-        width:70% !important;
-        margin:auto;
-    }
-
-}
 </style>
 
 </head>
@@ -408,8 +264,7 @@ cursor:pointer;
 <span>Abril 2026</span>
 </div>
 
-<div class="titulo"> Recuerdos de nuestra </div>
-<div class="titulo"> boda </div>
+<div class="titulo"> Recuerdos de nuestra boda</div>
 <div class="titulo">Edrei   y Lisbey</div>
 <h1></h1>
 <h1></h1>
@@ -420,17 +275,7 @@ cursor:pointer;
 
 
 <button class="boton-sello" onclick="abrir()">
-<h1></h1>
-<h1></h1>
-<h1></h1>
-<h1></h1>
-<h1></h1>
-<h1></h1>
-<h1></h1>
-<h1></h1>
-<h1></h1>
-<h1></h1>
-Toca para abrir nuestros recuerdos
+.
 </button>
 
 </div>
@@ -458,8 +303,19 @@ Toca para abrir nuestros recuerdos
 
 <section>
 <div class="titulo">Diciembre 23/2025</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-<div class="pagina horizontal-vertical">
+
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -473,35 +329,46 @@ Toca para abrir nuestros recuerdos
     <div class="foto" style="
         width:280px;
         height:230px;
-        top:290px;
+        top:200px;
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="5.jpeg">
+        <img src="5.JPEG">
     </div>
 
     <!-- FOTO 2 -->
     <div class="foto" style="
-        width:260px;
-        height:300px;
-        top:255px;
+        width:250px;
+        height:270px;
+        top:300px;
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="7.jpeg">
+        <img src="7.JPEG">
     </div>
 
     </div>
-
 
 
 </section>
+
+<!--2 VARIOS -->
 
 <section>
-
 <div class="titulo"></div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-<div class="pagina horizontal-vertical">
+
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -515,70 +382,199 @@ Toca para abrir nuestros recuerdos
     <div class="foto" style="
         width:280px;
         height:230px;
-        top:290px;
+        top:200px;
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="3.jpeg">
+        <img src="3.JPEG">
     </div>
 
     <!-- FOTO 2 -->
     <div class="foto" style="
-        width:260px;
-        height:300px;
-        top:255px;
+        width:250px;
+        height:400px;
+        top:140px;
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="10.jpeg">
+        <img src="10.JPEG">
     </div>
 
     </div>
-
 
 
 </section>
-<!-- 2 VARIOS -->
+
+<!-- 3 VARIOS -->
 
 <section>
 <div class="titulo">Febrero 24/2026</div>
 <div class="titulo">Pedida de noviazgo</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
 
+<div class="pagina">
 
-<div class="pagina cuadricula">
-
-    <div class="foto">
-        <img src="m.png">
+    <!-- TITULO -->
+    <div class="titulofoto" style="
+        top:40px;
+        left:50px;
+    ">
+        
     </div>
 
-    <div class="foto">
-        <img src="9.jpeg">
+    <!-- FOTO 1 -->
+    <div class="foto" style="
+        width:330px;
+        height:330px;
+        top:250px;
+        left:30px;
+        transform:rotate(0deg);
+    ">
+        <img src="m.PNG">
     </div>
 
-    <div class="foto">
-        <img src="8.jpeg">
+    <!-- FOTO 2 -->
+    <div class="foto" style="
+        width:230px;
+        height:330px;
+        top:250px;
+        right:20px;
+        transform:rotate(0deg);
+    ">
+        <img src="9.JPEG">
     </div>
 
-    <div class="foto">
-        <img src="1.jpeg">
     </div>
-    
 
-</div>
+
 </section>
 
+<!-- 4 VARIOS -->
+
+<section>
+<div class="titulo">Febrero 24/2026</div>
+<div class="titulo">Pedida de noviazgo</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
 
+<div class="pagina">
+
+    <!-- TITULO -->
+    <div class="titulofoto" style="
+        top:40px;
+        left:50px;
+    ">
+        
+    </div>
+
+    <!-- FOTO 1 -->
+    <div class="foto" style="
+        width:330px;
+        height:330px;
+        top:250px;
+        left:30px;
+        transform:rotate(0deg);
+    ">
+        <img src="8.JPEG">
+    </div>
+
+    <!-- FOTO 2 -->
+    <div class="foto" style="
+        width:230px;
+        height:350px;
+        top:240px;
+        right:20px;
+        transform:rotate(0deg);
+    ">
+        <img src="1.JPEG">
+    </div>
+
+    </div>
+
+
+</section>
+
+<!-- 5 VARIOS -->
+
+<section>
+<div class="titulo">Febrero 24/2026</div>
+<div class="titulo">Pedida de noviazgo</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+
+
+<div class="pagina">
+
+    <!-- TITULO -->
+    <div class="titulofoto" style="
+        top:40px;
+        left:50px;
+    ">
+        
+    </div>
+
+    <!-- FOTO 1 -->
+    <div class="foto" style="
+        width:330px;
+        height:330px;
+        top:230px;
+        left:160px;
+        transform:rotate(0deg);
+    ">
+        <img src="12.JPEG">
+    </div>
+
+   
+   
+
+    </div>
+
+
+</section>
 
 <!-- DIA QUE NOS CONOCIMOS EN PERSONA -->
 <section>
 
 <div class="titulo">Abril 11/2026</div>
 <div class="titulo">Día que nos conocimos en persona</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -596,7 +592,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="6.jpeg">
+        <img src="6.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -607,7 +603,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="11.jpeg">
+        <img src="11.JPEG">
     </div>
 
     </div>
@@ -622,9 +618,17 @@ Toca para abrir nuestros recuerdos
 
 <div class="titulo">Abril 18/2026</div>
 <div class="titulo">Pedida de mano</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -642,7 +646,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="13.jpeg">
+        <img src="13.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -653,7 +657,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="14.jpeg">
+        <img src="14.JPEG">
     </div>
 
     </div>
@@ -666,9 +670,17 @@ Toca para abrir nuestros recuerdos
 
 <div class="titulo">Abril 18/2026</div>
 <div class="titulo">Pedida de mano</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -686,7 +698,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="16.jpeg">
+        <img src="16.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -697,7 +709,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="18.jpeg">
+        <img src="18.JPEG">
     </div>
 
     </div>
@@ -710,9 +722,17 @@ Toca para abrir nuestros recuerdos
 
 <div class="titulo">Abril 18/2026</div>
 <div class="titulo">Pedida de mano</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -730,7 +750,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="15.jpeg">
+        <img src="15.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -741,7 +761,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="17.jpeg">
+        <img src="17.JPEG">
     </div>
 
     </div>
@@ -757,9 +777,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal-vertical">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -777,7 +805,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="20.jpeg">
+        <img src="20.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -788,7 +816,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="21.jpeg">
+        <img src="21.JPEG">
     </div>
 
      </div>
@@ -802,9 +830,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina vertical">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -822,7 +858,7 @@ Toca para abrir nuestros recuerdos
         left:110px;
         transform:rotate(0deg);
     ">
-        <img src="24.jpeg">
+        <img src="24.JPEG">
     </div>
 
 
@@ -836,9 +872,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -856,7 +900,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="22.jpeg">
+        <img src="22.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -867,7 +911,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="23.jpeg">
+        <img src="23.JPEG">
     </div>
 
      </div>
@@ -880,9 +924,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -900,7 +952,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="26.jpeg">
+        <img src="26.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -911,7 +963,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="25.jpeg">
+        <img src="25.JPEG">
     </div>
 
      </div>
@@ -925,9 +977,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -945,7 +1005,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="28.jpeg">
+        <img src="28.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -956,7 +1016,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="33.jpeg">
+        <img src="33.JPEG">
     </div>
 
      </div>
@@ -969,9 +1029,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -989,7 +1057,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="27.jpeg">
+        <img src="27.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -1000,7 +1068,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="34.jpeg">
+        <img src="34.JPEG">
     </div>
 
      </div>
@@ -1014,9 +1082,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -1034,7 +1110,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="29.jpeg">
+        <img src="29.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -1045,7 +1121,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="30.jpeg">
+        <img src="30.JPEG">
 </div>
 
      </div>
@@ -1059,9 +1135,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -1079,7 +1163,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="32.jpeg">
+        <img src="32.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -1090,7 +1174,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="37.jpeg">
+        <img src="37.JPEG">
     </div>
 
      </div>
@@ -1103,9 +1187,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -1123,7 +1215,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="36.jpeg">
+        <img src="36.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -1134,7 +1226,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="31.jpeg">
+        <img src="31.JPEG">
     </div>
 
      </div>
@@ -1147,9 +1239,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 23/2026</div>
 <div class="titulo">Boda civil</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina horizontal">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -1167,7 +1267,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src="40.jpeg">
+        <img src="40.JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -1178,7 +1278,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src="41.jpeg">
+        <img src="41.JPEG">
     </div>
 
      </div>
@@ -1193,9 +1293,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 26/2026</div>
 <div class="titulo">Boda de honra</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina vertical">
+<div class="pagina">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -1213,7 +1321,7 @@ Toca para abrir nuestros recuerdos
         left:30px;
         transform:rotate(0deg);
     ">
-        <img src=".jpeg">
+        <img src=".JPEG">
     </div>
 
     <!-- FOTO 2 -->
@@ -1224,7 +1332,7 @@ Toca para abrir nuestros recuerdos
         right:30px;
         transform:rotate(0deg);
     ">
-        <img src=".jpeg">
+        <img src=".JPEG">
     </div>
 
      </div>
@@ -1235,9 +1343,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 26 2026</div>
 <div class="titulo">Celebración</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina vertical">
+<div class="pagina">
 
     <div class="foto" style="
         width:300px;
@@ -1265,9 +1381,17 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Abril 26 2026</div>
 <div class="titulo">Nuestra luna de miel</div>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
 
-
-<div class="pagina vertical">
+<div class="pagina">
 
     <div class="foto" style="
         width:300px;
@@ -1413,25 +1537,24 @@ imagenes.forEach(img => {
 
         /* SOLO ESTA FOTO TENDRÁ GALERÍA */
 
-        if(ruta === "m.png"){
+        if(ruta === "m.PNG"){
 
             fotos = [
-                "m.png",
-                "o.png",
-                "q.png",
-                "p.png",
-                "n.png",
-                "12.jpeg"
+                "m.PNG",
+                "o.PNG",
+                "q.PNG",
+                "p.PNG",
+                "n.PNG"
                 
             ];
-        
-        }else if(ruta === "11.jpeg"){
+        if(ruta === "11.JPEG"){
 
             fotos = [
-                "11.jpeg",
-                "2.jpeg"
+                "11.JPEG",
+                "2.JPEG"
             
             ];
+        }
 
         }else{
 
