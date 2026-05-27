@@ -268,7 +268,37 @@ cursor:pointer;
     align-items:center;
 
 }
+    /* ===== 2 FOTOS AL LADO ===== */
+
+.horizontal{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* ===== FOTOS UNA DEBAJO DE OTRA ===== */
+
+.columna{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===== CUADRICULA 2x2 ===== */
+
+.cuadricula{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    justify-content:center;
+    align-items:center;
+}
 @keyframes zoom{
+    
     from{
         transform:scale(0.7);
         opacity:0;
@@ -409,7 +439,7 @@ Toca para abrir nuestros recuerdos
 <section>
 <div class="titulo">Diciembre 23/2025</div>
 
-<div class="pagina vertical">
+<div class="pagina horizontal">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -451,7 +481,7 @@ Toca para abrir nuestros recuerdos
 
 <div class="titulo"></div>
 
-<div class="pagina vertical">
+<div class="pagina horizontal">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
@@ -496,7 +526,7 @@ Toca para abrir nuestros recuerdos
 
 
 
-<div class="pagina vertical">
+<div class="pagina cuadricula">
 
     <div class="foto">
         <img src="m.png">
@@ -528,7 +558,7 @@ Toca para abrir nuestros recuerdos
 <div class="titulo">Día que nos conocimos en persona</div>
 
 
-<div class="pagina vertical">
+<div class="pagina horizontal">
 
     <!-- TITULO -->
     <div class="titulofoto" style="
